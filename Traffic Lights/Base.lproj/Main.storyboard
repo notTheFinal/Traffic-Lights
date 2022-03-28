@@ -27,7 +27,7 @@
                                     <action selector="pushStartButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="jKI-zt-uAn"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="sc2-E4-kgN">
+                            <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="sc2-E4-kgN">
                                 <rect key="frame" x="147.66666666666669" y="121.99999999999997" width="132.66666666666669" height="425.33333333333326"/>
                                 <subviews>
                                     <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPu-36-Dt5">

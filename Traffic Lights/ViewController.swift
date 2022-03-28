@@ -1,32 +1,27 @@
-//
-//  ViewController.swift
-//  Traffic Lights
-//
-//  Created by Александр on 27.03.2022.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-
     @IBOutlet weak var redView: UIView!
     @IBOutlet weak var yellowView: UIView!
     @IBOutlet weak var greenView: UIView!
     
     @IBOutlet weak var startButton: UIButton!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        redView.layer.cornerRadius = 65
-        yellowView.layer.cornerRadius = 65
-        greenView.layer.cornerRadius = 65
+        
         startButton.layer.cornerRadius = 15
+        startButton.setTitle("START", for: .normal)
+    }
+    
+    override func viewWillLayoutSubviews() {
+        redView.layer.cornerRadius = redView.frame.width / 2
+        greenView.layer.cornerRadius = greenView.frame.width / 2
+        yellowView.layer.cornerRadius = yellowView.frame.width / 2
     }
 
-    @IBAction func pushStartButton() {
 
+    @IBAction func pushStartButton() {
         if startButton.currentTitle == "START" {
             startButton.setTitle("NEXT", for: .normal)
         }
